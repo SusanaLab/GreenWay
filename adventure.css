@@ -1,0 +1,278 @@
+/* Estilos para el body */
+body {
+  color: black;
+  background-image: url('./assets/adv.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'DM Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0%;
+}
+
+footer {
+  background: var(--Dark, #2d2d2f);
+  color: white;
+  margin: 0%;
+  padding: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.fotter-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.icon {
+  margin: 10px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer li {
+  display: inline;
+  margin: 0 20px;
+}
+ul.icons {
+ display: flex;
+  flex-direction: row;
+  list-style-type: none; 
+  padding: 0; 
+  justify-content: center;
+  align-items: center;/ 
+}
+
+
+.navbar {
+  background: rgba(255, 255, 255, 0.2); /* Fondo semi-transparente */
+  backdrop-filter: blur(6px); /* Efecto de desenfoque */
+  padding: 10px 0;
+   position: fixed; /* Hace que el navbar sea fijo en la parte superior */
+  top: 0; /* Ancla el navbar en la parte superior */
+  width: 100%; /* Ancho completo del viewport */
+  z-index: 1000; 
+}
+ul.navbar {
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  padding-inline-start: 0px;
+  display: flex;
+  justify-content: space-around;
+}
+
+li.nav-item {
+  float: left;
+}
+
+li.nav-item a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: white;
+}
+.hidden-checkbox {
+  position: absolute;
+  left: -9999px;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+padding: 130px;
+
+}
+.container h1 {
+color: var(--White, #FFF);
+margin: 0%;
+padding: 0%;
+font-family: Montserrat;
+font-size: 100px;
+font-style: normal;
+font-weight: 900;
+line-height: normal;
+ text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+.container p {
+  color: #FFF;
+font-family: Montserrat;
+font-size: 22px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+ text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+.container h2{
+ color: var(--White, #FFF);
+font-family: Montserrat;
+font-size: 22px;
+font-style: normal;
+font-weight: 900;
+line-height: normal;
+ text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+.card-mountaineering{
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 100px;
+  padding: 10px;
+  margin: 10px;
+  color: aliceblue;
+background-image: url('./assets/paracaidas.jpeg');
+ background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 30px;
+}
+.card-hiking{
+    display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 100px;
+  padding: 10px;
+  margin: 10px;
+  color: aliceblue;
+  background-image: url('./assets/senderismo.jpeg');
+   background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 30px;
+}
+.card-surfing{
+    display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 100px;
+  padding: 10px;
+  margin: 10px;
+  color: aliceblue;
+  background-image: url('./assets/surf.jpeg');
+   background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 30px;
+}
+.card-kayaking {
+    display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 100px;
+  padding: 10px;
+  margin: 10px;
+  color: aliceblue;
+  background-image: url('./assets/kayak.jpeg');
+   background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 30px;
+}
+a{
+   text-decoration: none; 
+  color: inherit;
+}
+
+.card-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8%;
+  margin-bottom: 0%;
+  }
+
+@media screen and (max-width: 768px) {
+
+.container {
+  padding: 15%;
+
+}
+.container h1{
+  font-size: 4vh;
+}
+
+}
+
+
+@media screen and (max-width: 768px) {
+  footer {
+    padding: 2%;
+  }
+
+  .fotter-container {
+    flex-direction: row;
+    align-items: center;
+  }
+ul.icons {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none; 
+  padding: 0; 
+  justify-content: center;
+  align-items: center;
+}
+
+
+  .icon {
+    margin: 5px; 
+  }
+
+  footer li {
+    margin: 5px 0; 
+  }
+}
+
+@media screen and (max-width: 668px) {
+  /* Estilos para el icono del menú */
+ .menu-icon {
+            font-size: 24px;
+            cursor: pointer;
+            color: black;
+            display: block; 
+        }
+
+
+        ul.navbar {
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(9px);
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.75);
+            top: 0;
+            left: 0;
+            padding: 10px 0;
+        }
+
+        li.nav-item {
+            float: none;
+        }
+
+        li.nav-item a {
+            padding: 10px 0;
+        }
+
+      
+        #menu-toggle:checked + label.menu-icon + ul.navbar {
+            display: flex;
+        }
+
+        .menu-icon {
+            margin: 5%;
+        }
+        input{
+          display: none;
+        }
+     
+}
